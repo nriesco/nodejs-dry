@@ -38,11 +38,11 @@ app.get("/register/:variableName", register.index)
 
 
 // debug start
-var test = require('./public/javascripts/test.js');
-var test2 = require('./public/javascripts/test2.js');
+var math = require('./public/javascripts/math.js');
+var mathFail = require('./public/javascripts/mathFail.js');
 
-console.log(test.increment(1));
-console.log(test2.increment(1));
+console.log(math.increment(1));
+console.log(mathFail.increment(1));
 // debug end
 
 http.createServer(app).listen(app.get('port'), function(){

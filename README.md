@@ -8,7 +8,7 @@ cd nodejs-dry/
 npm install
 ````
 
-To run tests (needs mocha)
+To run tests (needs mocha - http://visionmedia.github.io/mocha/)
 ````
 mocha --ui tdd --reporter list /Users/nriesco/git/nodejs-dry/tests/basic.js
 ````

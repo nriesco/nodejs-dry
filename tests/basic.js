@@ -41,7 +41,6 @@ suite('math', function(){
 });
 
 
-
 suite('mathFail', function(){
   setup(function(){
     // ...

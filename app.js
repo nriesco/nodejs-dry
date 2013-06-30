@@ -3,11 +3,11 @@
  * Module dependencies.
  */
 
-var express = require('express')
-  , routes = require('./routes')
-  , register = require('./routes/register')
-  , http = require('http')
-  , path = require('path');
+var express   = require('express')
+    routes    = require('./routes'),
+    register  = require('./routes/register'),
+    http      = require('http'),
+    path      = require('path');
 
 var app = express();
 
@@ -34,10 +34,12 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get("/register/:variableName", register.index)
+app.get("/register/:variableName", register.index);
 
 
 // debug start
+
+// making sure they work on nodejs
 var math = require('./public/javascripts/math.js');
 var mathFail = require('./public/javascripts/mathFail.js');
 
@@ -45,6 +47,6 @@ console.log(math.increment(1));
 console.log(mathFail.increment(1));
 // debug end
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function() {
   console.log('Express server listening on port ' + app.get('port'));
 });

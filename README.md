@@ -61,3 +61,5 @@ where utils is the name you'll use to refer to this module.
 6. Repeat the last two steps as needed
 
 7. NOTE: if you register the same module name twice (include the module + register), the first one will not be accesible.
+
+8. What happens if you don't register your scripts? Well, register/exports is mandatory, but the rest of the register steps are optional. If you have utils.someMethod and utils2.someMethod you will only be able to access them by using exports.someMethod (instead of utils.someMethod), and of course, only one (the latter) will be available

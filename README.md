@@ -6,7 +6,7 @@ Reuse javascript code from your nodejs server into your browser
 
 Install
 ````
-express --sessions --css less --ejs nodejs-dry
+express --sessions --css less --ejs nodejs-dry #only needed if you start from scratch
 cd nodejs-dry/
 npm install
 ````

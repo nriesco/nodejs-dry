@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DRY</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    hello
+  </body>
+  <script type="text/javascript" src="/register/exports"></script>
+  <script type="text/javascript" src="/javascripts/math.js"></script>
+  <script type="text/javascript" src="/register/math"></script>
+  <script type="text/javascript" src="/javascripts/mathFail.js"></script>
+  <script type="text/javascript" src="/register/mathFail"></script>
+
+  <script>
+    var testNumber = 10
+    console.log(math.increment(testNumber));
+    console.log(mathFail.increment(testNumber));
+    console.log(math.increment(testNumber));
+    console.log(mathFail.increment(testNumber));
+  </script>
+</html>
